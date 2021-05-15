@@ -26,11 +26,21 @@ public class AddressBookService {
         return count;
     }
 
+    /**
+     * Returns the eldest peson
+     * @return
+     */
     public Optional<Person> eldestPerson() {
         Optional<Person> eldestPerson = this.addressBook.getPeople().stream().max(new SortByAge());
         return eldestPerson;
     }
 
+    /**
+     * Compare days diff from two person
+     * @param personA
+     * @param personB
+     * @return
+     */
     public long daysOlder(Person personA, Person personB) {
         long daysBetween = ChronoUnit.DAYS.between(personA.getDob(), personB.getDob());
         return daysBetween;

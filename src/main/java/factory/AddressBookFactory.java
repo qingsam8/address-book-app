@@ -35,6 +35,9 @@ public class AddressBookFactory {
         return new Person(firstName, surName, gender, date);
     }
 
+    /**
+     * Method parse a given file into an AddressBook
+     */
     public static AddressBook addressBookFromFile(String filePath) {
         File file = new File(filePath);
 

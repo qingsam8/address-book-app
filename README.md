@@ -1,3 +1,9 @@
+# TODO
+- Add more test to handle different test files
+- handle parsing of DOB to use 1900s and 2000s etc (maybe need to change the dataset)
+- add more documentations
+
+
 # Technical Assignment for Backend
 
 ## The task
